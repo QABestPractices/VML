@@ -91,7 +91,7 @@ namespace VMLYR.PageObjectModifier
 
             if (!pageHasLoaded)
             {
-                throw new Exception($"Failed to load page for Page URL= '{Driver.Url}', you broke it, again!!! :( ");
+                throw new Exception($"Failed due to page Title mismatch: \r\n Expected Title:'{title}' \r\n Actual Title:'{Driver.Title}'");
             }
         }
     }
