@@ -31,7 +31,7 @@ namespace VMLYR.PageObjectModifier
 
         public void Nav_OurWork()
         {
-            Driver.FindElement(By.CssSelector("div[role='dialog'] a[title='Explore VMLY&amp;R'''s work']")).Click();
+            Driver.FindElement(By.XPath("(//a[contains(text(),'Our Work')])[1]")).Click();
             string title = "Our Work | VMLY&R";
             EnsureHomePageLoaded(title);
         }
@@ -66,7 +66,7 @@ namespace VMLYR.PageObjectModifier
 
         public void Nav_ContactUs()
         {
-            Driver.FindElement(By.CssSelector("//div[@role='dialog']//a[@innertext='Contact Us']")).Click();
+            Driver.FindElement(By.XPath("(//a[contains(text(),'Contact Us')])[1]")).Click();
             string title = "Contact Us";
             EnsureHomePageLoaded(title);
         }

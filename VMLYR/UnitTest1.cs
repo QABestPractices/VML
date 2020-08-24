@@ -29,9 +29,9 @@ namespace VMLYR
 
                 navLinks.Nav_Icon();
 
-                //navLinks.Nav_OurWork();
+                navLinks.Nav_OurWork();
 
-                //navLinks.Nav_Icon();
+                navLinks.Nav_Icon();
 
                 navLinks.Nav_News();
 
@@ -49,7 +49,7 @@ namespace VMLYR
 
                 navLinks.Nav_Icon();
 
-                //navLinks.Nav_ContactUs();
+                navLinks.Nav_ContactUs();
             }
         }
     }
